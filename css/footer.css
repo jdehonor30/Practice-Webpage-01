@@ -1,4 +1,4 @@
-.main__footer {
+footer {
   line-height: 2em;
   background-color: var(--darkorange);
   color: var(--white)
@@ -59,7 +59,7 @@
   padding: 50px 0;
 }
 
-.footer__bottom .bottom__socmed ul {
+.footer__bottom .footer__socmed ul {
   display: flex;
   column-gap: 10px;
 }
@@ -70,7 +70,7 @@
   color: var(--white);
 }
 
-.bottom__socmed a {
+.footer__socmed a {
   padding: 10px;
   color: var(--white);
   border: 2px solid var(--white);
@@ -78,11 +78,11 @@
   transition: all 700ms ease;
 }
 
-.bottom__socmed a:hover {
+.footer__socmed a:hover {
   background-color: var(--white);
   color: var(--darkorange);
 }
 
-.bottom__socmed ul li:first-child a {
+.footer__socmed ul li:first-child a {
   padding: 10px 15px;
 }

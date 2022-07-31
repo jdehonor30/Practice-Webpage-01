@@ -1,24 +1,24 @@
-.main__header {
+header {
   background: url(/images/header_background.png);
 }
 
-.main__header .container {
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.main__header .header__logo {
+header .header__logo {
   padding: 16px 10px;
 }
 
-.main__header .header__menu {
+header .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main__header a {
+header a {
   color: var(--darkgray);
 }
 
@@ -91,7 +91,7 @@
   background-color: var(--gray);   
 }
 
-.header__menu.active {
+.header__menu .active {
   color: var(--lightblue);
 }
 
