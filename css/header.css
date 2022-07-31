@@ -58,10 +58,9 @@ header a {
   margin-left: 5px;
 }
 
-.header__menu > ul > li a:only-child::after {
-  position: absolute;
+.header__menu > ul > li a:only-child::after,
+.header__menu > ul > li:last-child a::after  {
   content: '';
-  margin-left: 5px;
 }
 
 .header__menu ul li ul {

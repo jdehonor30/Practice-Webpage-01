@@ -1,7 +1,7 @@
 footer {
   line-height: 2em;
   background-color: var(--darkorange);
-  color: var(--white)
+  color: var(--white);
 }
 
 /* TOP FOOTER */
@@ -60,18 +60,15 @@ footer {
 }
 
 .footer__bottom .footer__socmed ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
 }
 
-.footer__bottom div > a {
-  padding: 2px 3px;
-  font-size: spx;
-  color: var(--white);
-}
-
 .footer__socmed a {
-  padding: 10px;
+  display: grid;
+  place-items: center;
+  padding: 10px 10px;
   color: var(--white);
   border: 2px solid var(--white);
   font-size: 20px;
@@ -81,8 +78,4 @@ footer {
 .footer__socmed a:hover {
   background-color: var(--white);
   color: var(--darkorange);
-}
-
-.footer__socmed ul li:first-child a {
-  padding: 10px 15px;
 }
