@@ -1,6 +1,5 @@
 /* MAIN-TOP */
 
-
 .main__top {
     position: relative;
     background-image: url(/images/slide_image.jpg);
@@ -99,8 +98,7 @@
     position: relative;
     font-size: 35px;
     font-weight: 400;
-    padding-bottom: 50px;
-       
+    padding-bottom: 50px;     
 }
 
 .main__middle h1::after {
@@ -331,7 +329,6 @@
     background-attachment: fixed;
     border-top: 3px solid var(--white);
     border-bottom: 3px solid var(--white);
-
 }
 
 .parallax__background p {
@@ -340,10 +337,4 @@
     color: var(--white);
     background-color: var(--darkgray);
     padding: 5px;
-
 }
-
-
-
-
-

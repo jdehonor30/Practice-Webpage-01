@@ -1,11 +1,9 @@
 :root {
-
     --darkgray: #333333;
     --dirtywhite: #dddddd;
     --darkorange: #ff6764;
     --white: #fff;
     --gray: #e4e4e4;
     --lightblue: #2ba8bd;
-    --lightgray: rgb(109, 104, 104);
-   
+    --lightgray: rgb(109, 104, 104); 
 }

@@ -28,6 +28,7 @@
     align-items: center;
     column-gap: 10px;
 }
+
 .header__menu nav > ul > li {
     position: relative;
 }
@@ -51,6 +52,12 @@
     color: var(--darkgray)
 }
 
+.header__menu nav > ul > li:first-child > a::after,
+.header__menu nav > ul > li:nth-child(4) > a:after {
+    position: absolute;
+    content: '+';
+    margin-left: 5px;
+}
 
 .header__menu nav ul li ul {
     display: none;
@@ -82,7 +89,7 @@
     
 }
 
-.header__menu nav span {
+.header__menu nav .active {
     color: var(--lightblue);
 }
 
@@ -93,8 +100,3 @@
 .header__menu nav ul li ul li:hover a {
     color: rgb(116, 113, 113);
 }
-
-
-
-
-
