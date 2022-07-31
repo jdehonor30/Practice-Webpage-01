@@ -30,7 +30,7 @@ footer {
   font-weight: bold;
 }
 
-.footer__top #au__button {
+.footer__top #footer__au-button {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ footer {
   transition: all 700ms ease; 
 }
 
-.footer__top #au__button:hover {
+.footer__top #footer__au-button:hover {
   background-color: var(--white);
   color: var(--darkorange);
 }
