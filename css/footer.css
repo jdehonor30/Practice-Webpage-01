@@ -21,9 +21,10 @@ footer {
   justify-content: center;
 }
 
-.footer__top .container div h2 {
+.footer__top .container div h3 {
   font-weight: 400;
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .footer__top .container div span {
