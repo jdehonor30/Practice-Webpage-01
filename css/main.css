@@ -37,7 +37,6 @@
   row-gap: 5px;
 }
 
-
 .main__socmed-icons ul li a {
   display: grid;
   place-items: center;  
@@ -68,7 +67,6 @@
   font-weight: 400;
   padding: 20px;
 }
-
 
 .main__greetings span::after {
   content: '';
@@ -208,7 +206,6 @@
   border-left: 20px solid transparent;
   z-index: 2000;
   transition: all 300ms ease;
-
 }
 
 .projects__content .projects__image:hover::before {
@@ -230,8 +227,6 @@
   color: var(--lightgray);
   margin-bottom: 10px;
 }
-
-
 
 .projects__content .projects__texts {
   position: relative;
