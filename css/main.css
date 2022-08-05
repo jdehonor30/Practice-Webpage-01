@@ -1,0 +1,321 @@
+/* MAIN-TOP */
+
+.main__top {
+  position: relative;
+  background-image: url("/images/slide_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; 
+}
+
+.main__top::before {
+  position: absolute;
+}
+
+.main__top .main__arrow-icons {
+  position: absolute;
+  background-image: url("/images/header_background.png");
+  font-size: 30px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__top .main__arrow-icons i {
+  padding: 20px;
+  color: var(--darkgray);
+}
+
+.main__socmed-icons { 
+  position: absolute;
+  top: 15%;
+}
+
+.main__socmed-icons ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main__socmed-icons ul li a {
+  display: grid;
+  place-items: center;  
+  padding:10px;
+  background-color: var(--darkorange);
+  color: var(--white);
+  font-size: 25px;
+  transition: all 700ms ease;
+}
+
+.main__socmed-icons ul a:hover {
+  background-color: var(--white);
+  color: var(--darkgray);
+}
+
+.main__greetings {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__greetings span {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+  background-color: var(--darkorange);
+  font-weight: 400;
+  padding: 20px;
+}
+
+.main__greetings span::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--darkorange)
+}
+
+/* MAIN-BOTTOM */
+.main__bottom {
+  padding: 50px 0;
+  text-align: center;
+  line-height: 2em;
+  color: var(--darkgray);
+}
+
+.main__bottom .container h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 400;
+  padding-bottom: 50px; 
+}
+
+.main__bottom .container > p {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.main__bottom .main__features {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 100px;
+  column-gap: 30px;
+  color: var(--darkgray);
+  font-size: 16px;
+}
+
+.main__bottom .main__features div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.main__bottom .main__features i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 5px solid var(--darkorange);
+  font-size: 50px;
+}
+
+.main__bottom .main__features  h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+/* PROJECTS */
+
+.projects {
+  background-color: var(--darkorange);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects .projects__intro {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 2em;
+  padding-bottom: 50px;
+}
+
+.projects .projects__intro h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 400;
+  padding-bottom: 50px;     
+}
+
+.projects .projects__about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects .projects__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 10px;
+  border: 3px solid var(--white);
+  background-color: var(--white);
+}
+
+.projects__content .projects__image {
+  position: relative;
+}
+
+.projects__content .projects__image img {
+  position: relative;
+  height: 100%;
+}
+
+.projects__content .projects__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  opacity: 90%;
+  background-color: black;
+  z-index: 1000;
+  transition: height 300ms ease;
+}
+
+.projects__content .projects__image::after {
+  display: absolute;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  opacity: 0;
+  transform: translate(50%,-50%);
+  border-top: 20px solid var(--white);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  z-index: 2000;
+  transition: all 300ms ease;
+}
+
+.projects__content .projects__image:hover::before {
+  height: 100%;
+}
+
+.projects__content .projects__image:hover::after {
+  top: 50%;
+  opacity: 80%;
+}
+
+.projects__content .projects__texts h3 {
+  color: var(--darkgray);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.projects__content .projects__texts p {
+  color: var(--lightgray);
+  margin-bottom: 10px;
+}
+
+.projects__content .projects__texts {
+  position: relative;
+  width: 100%;
+}
+
+.projects__texts .projects__left-border {
+  position: absolute;
+  height: 10px;
+  width: calc(50% - 10px);
+  left: 0;
+  background-color: var(--white);
+  bottom: calc(100% + 10px);
+  z-index: 1000;
+}
+
+.projects__texts .projects__right-border {
+  position: absolute;
+  height: 10px;
+  width: calc(50% - 10px);
+  right:0;
+  background-color: var(--white);
+  bottom: calc(100% + 10px);
+  z-index: 1000;
+}
+
+.projects__texts .projects__left-border::before {
+  position: absolute;
+  content: '';
+  left: 100%;
+  border-bottom: 10px solid var(--white);
+  border-right: 10px solid transparent;
+}
+
+.projects__texts .projects__right-border::before {
+  position: absolute;
+  content: '';
+  right: 100%;
+  border-bottom: 10px solid var(--white);
+  border-left: 10px solid transparent;
+}
+
+.projects .projects__button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 20px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.projects .projects__button:hover {
+  background-color: var(--white);
+  color: var(--darkorange);
+  transition: all 700ms ease;
+}
+
+/* PARALLAX */
+
+.parallax__background {
+  display: grid;
+  place-items: center;
+  background-image: url("/images/parallax.png");
+  height: 200px;
+  background-attachment: fixed;
+  border-top: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
+}
+
+.parallax__background span {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--darkgray);
+  padding: 5px;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  bottom: 25px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 4px;
+  background-color: var(--lightgray);
+  opacity: 25%;
+}
+
+.divider--white::before {
+  background-color: white;
+}
